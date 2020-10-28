@@ -1,40 +1,12 @@
+{% extends 'mainapp/base.html' %}
 {% load staticfiles %}
 
-<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Historical games</title>
-		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div class = "container">
+{% block div_main %}
 			<div  class = "main-contacts" >
-			<header>
-				<div class = "search-contacts">
-					<div class="wrap-top">
-					<div class="wrap-logo">	
-						<div class="h-log">Historical</div>
-						<div class="g-log">GAMES</div>
-					</div>	
-					<div class="wrap-phone">
-					<img class = "img_tel" src="{% static 'img/тел.png' %}" alt="img">
-					<p class = "p-tel">  +123 456 7890</p></div>
-					<div class="wrap-email">
-						<img class = "img_email" src="{% static 'img/email.png'%}" alt="img">
-						<p class = "p-email"> 
-					info@example.com</p></div> 
-					
-					<form action="#" class="wrap-search">
-
-						<input class = "input-search" type="text" name="search" placeholder="Search">
-						<button class ="wrap-batton" type="button">
-						<img class = "img_search" src="{% static 'img/поиск_иконка@2x.png' %}"  alt="img">
-						</button></form>
-				</div>
-				</div>
+			 <header>
+            <div class = "search-contacts">
+{% endblock div_main %}
+{% block menu %}
 				<div class = "menu">
 					<ul>
 						<li class="menu-list"> <a class="menu-link-active-c" href ="index.html"> Home</a></li>
@@ -46,6 +18,8 @@
 						<li class="menu-list"> <a class="menu-link-c" href ="contacts.html"> Contact Us</a></li>
 					</ul>
 				</div>
+ {% endblock menu %}
+ {% block content %}
 				<div class="hr-c"></div>
 			</header>
 
@@ -144,12 +118,6 @@
 </div>
 
 
-
-
-
-
-
-
 			<div class="wrap-contact-p">
 				<div class ="contact-c">
 					<div class="titele-contact-c">
@@ -194,20 +162,7 @@
 				<div class="map">
 					<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4485.540029610447!2d37.53676158795843!3d55.79723133456141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549c0af2d5e3f%3A0xa77899d557548e3a!2sMail.Ru%20Group!5e0!3m2!1sru!2sru!4v1593362270862!5m2!1sru!2sru" width="970" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				
-					
+{% endblock content %}					
 				</div>
 			</div>
 
-
-
-
-
-
-
-			<footer>
-&copy; 2017 Historical Games. All rights reserved | Design by 
-<span class="red">&nbsp; W3layouts</span>
-</footer>
-		</div>
-	</body>
-</html>
