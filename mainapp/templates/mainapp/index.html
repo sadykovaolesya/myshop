@@ -1,0 +1,464 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Historical games</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "container">
+			<div  class = "main" >
+			<header>
+				<div class = "search">
+					<div class="wrap-top">
+					<div class="wrap-logo">	
+						<div class="h-log">Historical</div>
+						<div class="g-log">GAMES</div>
+					</div>	
+					<div class="wrap-phone">
+						<img class = "img_tel" src="{% static 'img/тел.png' %}" alt="img">
+						<p class = "p-tel">  +123 456 7890</p>
+</div>
+					<div class="wrap-email">
+						<img class = "img_email" src="{% static 'img/email.png'%}" alt="img">
+						<p class = "p-email"> 
+					info@example.com</p></div> 
+					<form action="#" class="wrap-search">
+
+						<input class = "input-search" type="text" name="search" placeholder="Search">
+						<button class ="wrap-batton" type="button">
+						<img class = "img_search" src="{% static 'img/поиск_иконка@2x.png' %}" alt="img">
+						</button></form>
+				</div>
+				</div>
+				<div class = "menu">
+					<ul>
+						<li class="menu-list"> <a class="menu-link-active" href ="#"> Home</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="#"> About</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="#"> Service</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="catalog.html"> Gallery</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="#"> News</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="#"> Team</a></li>
+						<li class="menu-list"> <a class="menu-link" href ="contacts.html"> Contact Us</a></li>
+					</ul>
+				</div>
+				<hr>
+			</header>
+
+			<div class="text_main">
+				<h2 class = "nunc"> Nunc eget nibh</h2>
+				<div class="rect"></div>
+				<h1> Morbi in nisl auctor</h1>
+			</div>
+
+			<div class = "img-log">
+			<div class="log-media"><a href="#"><img class = "img_log-facebook" src="{% static 'img/facebook.png' %}" alt="img"></a></div>
+			<div class="log-media"><a href="#"><img class = "img_log-twitter" src="{% static 'img/twitter.png' %}" alt="img"></a></div>
+			<div class="log-media"><a href="#"><img class = "img_log-rss" src="{% static 'img/rss.png' %}" alt="img"></a></div>
+			<div class="log-media"><a href="#"><img class = "img_log-vk" src="{% static 'img/vk.png' %}" alt="img"></a></div>
+			</div>
+			</div>
+
+
+			<div class="wrap-about">
+			<div class ="about">
+				<div class="about-text" >
+					<h3> About Us!</h3>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				</div>
+				<div class="about-img" ><img src="{% static 'img/1.jpg' %}" alt="img"></div>
+			 </div>
+			</div>
+
+
+
+			<div class="wrap-services">
+				<div class="services">
+					<div class="services-title"><h3>Services</h3></div>
+
+					<div class="service-row">
+						<div class="service-item-left">
+							<div class="service-text">
+								<h4>Repreh Qui In Ea Voluptate</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+							<div class="service-img stick">
+								
+							</div>
+						</div>
+
+						<div class="service-item-right">
+							<div class="service-img arrow">
+								
+							</div>
+							<div class="service-text">
+								<h4>Voluptatibus Maiores Alias</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+
+						</div>
+	
+					</div>
+
+					<div class="service-row">
+						<div class="service-item-left">
+							<div class="service-text">
+								<h4>Aut Perferendis Doloribus</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+							<div class="service-img dollar">
+								
+							</div>
+						</div>
+
+						<div class="service-item-right">
+							<div class="service-img home">
+								
+							</div>
+							<div class="service-text">
+								<h4>Dut Aut Reiciendis Maiores</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+
+						</div>
+	
+					</div>
+
+					<div class="service-row">
+						<div class="service-item-left">
+							<div class="service-text">
+								<h4>Maiores Alias Consequatur</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+							<div class="service-img poll">
+								
+							</div>
+						</div>
+
+						<div class="service-item-right">
+							<div class="service-img settings">
+								
+							</div>
+							<div class="service-text">
+								<h4>Doloribus Volupta Maiores</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+							</div>
+
+						</div>
+	
+					</div>
+
+				</div>
+			</div>
+
+
+			 <div class ="container-gallery">
+			 	<div class ="gallery">
+
+				 	<div class="gallery-title"><h3>Our Gallery</h3></div>
+					<div class="gallery-items">
+						<div class ="div-gallery">
+							<img class = "img_gallery" src="{% static 'img/assassin.jpg' %}" alt="img">
+							<form action="#" class="form-buy"> 
+						<div class="discribe">ASSASIN’S CREED: Rogue</div> 
+						<button class ="buy-button" type="button">Buy </button> </form>
+						</div>
+
+						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/tomb.png' %}" alt="img">
+						<form action="#" class="form-buy"> 
+						<div class="discribe">TOMB RAIDER</div> 
+						<button class ="buy-button" type="button">Buy </button> </form>
+						</div>
+						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/ryse.png' %}" alt="img">
+						<form action="#" class="form-buy"> 
+						<div class="discribe">RYSE: Son Of Rome</div>  
+						<button class ="buy-button" type="button">Buy </button> </form>
+						</div>
+						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/warcraft.png' %}" alt="img">
+						<form action="#" class="form-buy"> 
+						<div class="discribe2">WORLD OF WARCRAFT:<br> Wrath Of The Linch King</div>  
+						<button class ="buy-button" type="button">Buy </button> </form>
+
+						</div>
+					</div>
+			  </div>
+			</div>
+
+			  <div class ="test">
+				<div class="text_test">
+				<h4 class = "h4-test"> Testimonial</h4>
+				<img class = "img_test" src="{% static 'img/иконка_2.png' %}" alt="img">
+				<p class = "p-test" >Donec feugiat tellus sem, laoreet iaculis orci lobortis vel. Sed sed luctus orci, at lacinia risus. Ut porttitor ante ac tincidunt elementum. Curabitur ex dolor, condimentum vitae nunc vel, pulvinar semper justo. Vestibulum et aliquet magna, maximus dapibus enim. Vestibulum ex lectus, posuere eu viverra at, mattis et enim. Nam efficitur sem et lectus fringilla, at pharetra nulla luctus. Nunc cursus, augue ac ultricies volutpat, neque erat congue justo, ac pretium tellus eros a neque. Integer ipsum sem, consectetur a mollis ac, cursus eu ipsum.</p>
+
+				<p class = "p-test-john">JOHN SMITH<span class="p-test-founder"> - FOUNDER</span></p>
+				<div class="prev"></div>
+				<div class="next"></div>
+				
+
+				</div>
+
+			   </div>
+
+
+			<div class="wrap-news">
+				<div class="news">
+				   <div class="news-title"><h3>News & Events</h3></div>
+				</div>
+				<div class="col">
+					<div class="left">
+						<h4 class="h4-news">Latest News</h4>
+						<div class="row-news">
+							<div class="date">
+								<div class="day">15</div>
+								<div class="mounth">June</div> 
+								<div class="year">2016</div>
+							</div>
+							<div class="new">
+								<h5 class="new-title">Fugiat Quo Voluptas</h5>
+								<p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+								velit esse.</p>
+							</div>
+						</div>
+
+						<div class="row-news">
+							<div class="date">
+								<div class="day">18</div>
+								<div class="mounth">June</div> 
+								<div class="year">2016</div>
+							</div>
+							<div class="new">
+								<h5 class="new-title">FugQui In Ea Voluptate</h5>
+								<p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+								velit esse.</p>
+							</div>
+						</div>
+
+						<div class="row-news">
+							<div class="date">
+								<div class="day">20</div>
+								<div class="mounth">June</div> 
+								<div class="year">2016</div>
+							</div>
+							<div class="new">
+								<h5 class="new-title">Autem Vel Eum Iure</h5>
+								<p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+								velit esse.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="right">
+						<div class="row-event">
+							<h4 class="h4-news events-title">Featured Events</h4>
+
+						<div class="prev-event">
+							
+						</div>
+
+						<div class="next-event">
+							
+						</div>
+
+						</div>
+
+						<div class="row-news img-event">
+							<img src="{% static 'img/g7.png' %}" alt="img">
+							<img src="{% static 'img/g9.jpg' %}" alt="img">
+							<img src="{% static 'img/g3.jpg' %}" alt="img">
+						</div>
+
+						<div class="row-event events">
+							<div class="main-events">
+								<div class="h5-events">
+									<span class="plus">−</span>Assumenda Est Cliche Reprehenderit
+								</div>
+								<div class="text">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								</div>
+							</div>
+						</div>
+
+						<div class="row-event events">
+							<div class="main-events">
+								<div class="h5-events">
+									<span class="plus">+</span>Assumenda Est Cliche Reprehenderit
+								</div>
+		
+							</div>
+						</div>
+						<div class="row-event events">
+							<div class="main-events">
+								<div class="h5-events">
+									<span class="plus">+</span>Assumenda Est Cliche Reprehenderit
+								</div>
+		
+							</div>
+						</div>
+						<div class="row-event events">
+							<div class="main-events">
+								<div class="h5-events">
+									<span class="plus">+</span>Assumenda Est Cliche Reprehenderit
+								</div>
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			  <div class ="team-conteiner"> 
+			  	<div class="team-title">
+			  		<h3>Our Team</h3>
+			  	</div>
+			  
+				<div class="team-items">
+
+					<div class ="team">
+						<img class = "img_team" src="{% static 'img/t1.jpg' %}" alt="img">
+
+					<div class="name">
+						<h4>Mary Jane</h4>
+					</div>
+
+					<div class="position">
+						Vestibulum
+					</div>
+					<div class="soc">
+						<div class="fb"></div>
+						<div class="tw"></div>
+						<div class="rss-black"></div>
+						<div class="vk-black"></div>
+					</div>
+					</div>
+					
+
+					<div class ="team">
+						<img class = "img_team" src="{% static 'img/t2.jpg' %}" alt="img">
+											<div class="name">
+						<h4>Peter Parker</h4>
+					</div>
+
+					<div class="position">
+						Ves tibulum
+					</div>
+					<div class="soc">
+						<div class="fb"></div>
+						<div class="tw"></div>
+						<div class="rss-black"></div>
+						<div class="vk-black"></div>
+					</div>
+					</div>
+					<div class ="team">
+						<img class = "img_team" src="{% static 'img/t3.jpg' %}" alt="img">
+											<div class="name">
+						<h4>John Watson</h4>
+					</div>
+
+					<div class="position">
+						Vestibulum
+					</div>
+					<div class="soc">
+						<div class="fb"></div>
+						<div class="tw"></div>
+						<div class="rss-black"></div>
+						<div class="vk-black"></div>
+					</div>
+					</div>
+					<div class ="team">
+						<img class = "img_team" src="{% static 'img/t4.jpg' %}" alt="img">
+											<div class="name">
+						<h4>Steven Wilson</h4>
+					</div>
+
+					<div class="position">
+						Vestibulum
+					</div>
+					<div class="soc">
+						<div class="fb"></div>
+						<div class="tw"></div>
+						<div class="rss-black"></div>
+						<div class="vk-black"></div>
+					</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class ="sub-conteiner">
+			  	<h4 class = "h4-sub">Subscribe with Us</h4>
+				<form action="#" class="sub">
+
+						<input class = "input-sub" type="text" name="sub" placeholder="Email">
+						<button class ="sub-batton" type="button">
+						Subscribe
+						</button></form>
+			   </div>
+
+			<div class="wrap-contact">
+				<div class ="contact">
+					<div class="titele-contact">
+				  		<h3>Contact Us</h3>
+					</div>
+					<div class="col-contact">
+						<div class="left-contact">
+							<h4>Get in touch with us</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets 
+							containing Lorem Ipsum passages sed do, At vero eos et accusamus et 
+							iusto odio digs qui blanditiis</p>
+
+							<p>Leningradsky AVE 39, BLDG 79<br>
+							MOSCOW 125167, Russia</p>
+
+							<p>Telephone : +00 111 222 3333</p>
+
+							<p>FAX : +1 888 888 4444</p>
+
+							<p>Email : <span>mail@example.com</span></p>
+						</div>
+						<div class="right-contact">
+						  	<form action="#" class="cont">
+									<input class = "input-cont" type="text" name="name" placeholder="Name">
+									<input class = "input-cont" type="text" name="email" placeholder="Email">
+									<textarea rows="10" class = "input-cont2" name="message" placeholder="Massege"></textarea> 
+									<button class ="cont-batton" type="button">
+									SUBMIT
+									</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="wrap-map">
+				<div class ="title-map">
+				  	<h3 >Route Map</h3>
+				</div>
+				<div class="map">
+					<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4485.540029610447!2d37.53676158795843!3d55.79723133456141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549c0af2d5e3f%3A0xa77899d557548e3a!2sMail.Ru%20Group!5e0!3m2!1sru!2sru!4v1593362270862!5m2!1sru!2sru" width="1170" height="298" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				
+					
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<footer>&copy; 2017 Исторические Игры. Все права защищены.</footer>
+		</div>
+	</body>
+</html>

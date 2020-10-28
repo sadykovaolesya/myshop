@@ -1,0 +1,140 @@
+{% extends 'mainapp/base.html' %}
+{% load staticfiles %}
+
+{% block div_main %}
+<div  class = "main-contacts-catalog" >		
+{% endblock div_main %}			
+{% block menu %}
+				<div class = "menu">
+					<ul>
+						<li class="menu-list"> <a class="menu-link-c" href ="index.html"> Home</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="#"> About</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="#"> Service</a></li>
+						<li class="menu-list"> <a class="menu-link-active-c" href ="catalog.html"> Gallery</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="#"> News</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="#"> Team</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="contacts.html"> Contact Us</a></li>
+					</ul>
+				</div>
+ {% endblock menu %}
+				<div class="hr-c"></div>
+			</header>
+
+{% block content %}
+
+			</div>
+
+<div class="wrap-games-catalog">
+	<div class="games">
+		<div class="title-games">
+			Our Gallery
+		</div>
+		<div class="list-games">
+			<div class="div-gallery-p">
+				<img  class="img_gallery-p" src="{% static 'img/catalog/1.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe">BATTLEFIELD 1</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img  class="img_gallery-p" src="{% static 'img/catalog/2.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe2">STAR WARS:<br>Battlefront II</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img  class="img_gallery-p" src="{% static 'img/catalog/3.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe">BATTLEFIELD 4</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img class="img_gallery-p" src="{% static 'img/catalog/4.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe">WORLD OF TANKS</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+		</div>
+
+				<div class="list-games">
+			<div class="div-gallery-p">
+				<img class="img_gallery-p" src="{% static 'img/catalog/5.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe2">ASSASIN’S CREED:<br> Rogue</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img class="img_gallery-p" src="{% static 'img/catalog/6.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe">FOR HONOR</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img class="img_gallery-p" src="{% static 'img/catalog/7.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe">WORLD OF WARSHIPS</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+						<div class="div-gallery-p">
+				<img class="img_gallery-p" src="{% static 'img/catalog/8.jpg' %}" alt="img">
+				<form action="#" class="form-buy-p"> 
+				<div class="discribe2">CALL OF DUTY:<br>Infinite Warface</div> 
+				<button class="buy-button" type="button">Buy </button>
+				</form>
+			</div>
+		</div>
+		<div class="show-button">
+			<form action="#" class="form-buy-p"> 
+			<button class="show-more-button" type="button">Show more games</button>						<div class="next-event">
+							
+						</div>
+				</form>
+		</div>
+	</div>
+</div>
+
+<div class="wrap-banners">
+	<div class="banner-left">
+		<div class="discount">
+			DISCOUNT
+		</div>
+		<div class="game-title-d">
+			CALL OF DUTY:<br>Modern Warfare 3
+		</div>
+		<div class="discount-price">
+			$14.44 <span class="old">/ </span><span class="old-p">$28.90</span>
+		</div>
+
+		<form action="#" class="form-buy-b"> 
+			<button class="buy-button-b" type="button">Buy</button>
+		</form>
+
+	</div>
+	<div class="banner-right">
+		<div class="discount">
+			DISCOUNT
+		</div>
+		<div class="game-title-d">
+			MEDAL OF HONOR
+		</div>
+		<div class="discount-price">
+			$15.96 <span class="old">/ </span><span class="old-p">$29.90</span>
+		</div>
+
+		<form action="#" class="form-buy-b"> 
+			<button class="buy-button-b" type="button">Buy</button>
+		</form>
+
+	</div>
+</div>
+
+			<div class="wrap-contact-p">
+{% endblock content %}
+			
