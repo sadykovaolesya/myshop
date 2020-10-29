@@ -8,27 +8,7 @@
 			<header>
 				<div class = "search">
 {% endblock div_main %}
-					<div class="wrap-top">
-					<div class="wrap-logo">	
-						<div class="h-log">Historical</div>
-						<div class="g-log">GAMES</div>
-					</div>	
-					<div class="wrap-phone">
-						<img class = "img_tel" src="{% static 'img/тел.png' %}" alt="img">
-						<p class = "p-tel">  +123 456 7890</p>
-</div>
-					<div class="wrap-email">
-						<img class = "img_email" src="{% static 'img/email.png'%}" alt="img">
-						<p class = "p-email"> 
-					info@example.com</p></div> 
-					<form action="#" class="wrap-search">
-
-						<input class = "input-search" type="text" name="search" placeholder="Search">
-						<button class ="wrap-batton" type="button">
-						<img class = "img_search" src="{% static 'img/поиск_иконка@2x.png' %}" alt="img">
-						</button></form>
-				</div>
-				</div>
+					
 {% block menu %}
 				<div class = "menu">
 					<ul>
@@ -404,37 +384,8 @@
 			<div class="wrap-contact">
 				<div class ="contact">
 					<div class="titele-contact">
-				  		<h3>Contact Us</h3>
-					</div>
-					<div class="col-contact">
-						<div class="left-contact">
-							<h4>Get in touch with us</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets 
-							containing Lorem Ipsum passages sed do, At vero eos et accusamus et 
-							iusto odio digs qui blanditiis</p>
 
-							<p>Leningradsky AVE 39, BLDG 79<br>
-							MOSCOW 125167, Russia</p>
-
-							<p>Telephone : +00 111 222 3333</p>
-
-							<p>FAX : +1 888 888 4444</p>
-
-							<p>Email : <span>mail@example.com</span></p>
-						</div>
-						<div class="right-contact">
-						  	<form action="#" class="cont">
-									<input class = "input-cont" type="text" name="name" placeholder="Name">
-									<input class = "input-cont" type="text" name="email" placeholder="Email">
-									<textarea rows="10" class = "input-cont2" name="message" placeholder="Massege"></textarea> 
-									<button class ="cont-batton" type="button">
-									SUBMIT
-									</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+{% include 'mainapp/includes/inc_contact.html'%}
 
 			<div class="wrap-map">
 				<div class ="title-map">
