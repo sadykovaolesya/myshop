@@ -8,17 +8,7 @@
 {% endblock div_main %}
 
 {% block menu %}
-				<div class = "menu">
-					<ul>
-						<li class="menu-list"> <a class="menu-link-c" href ="index.html"> Home</a></li>
-						<li class="menu-list"> <a class="menu-link-c" href ="#"> About</a></li>
-						<li class="menu-list"> <a class="menu-link-c" href ="#"> Service</a></li>
-						<li class="menu-list"> <a class="menu-link-c" href ="catalog.html"> Gallery</a></li>
-						<li class="menu-list"> <a class="menu-link-c" href ="#"> News</a></li>
-						<li class="menu-list"> <a class="menu-link-c" href ="#"> Team</a></li>
-						<li class="menu-list"> <a class="menu-link-active-c" href ="contacts.html"> Contact Us</a></li>
-					</ul>
-				</div>
+				{% include 'mainapp/includes/inc_menu.html'%}
 {% endblock menu %}
 {% block content %}
 				 <div class="hr-c"></div>

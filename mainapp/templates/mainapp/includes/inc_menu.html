@@ -1,0 +1,11 @@
+<div class = "menu">
+					<ul>
+						<li class="menu-list"> <a class="{% if request.resolver_match.url_name == 'main' %}menu-link-active-c{% else %}menu-link-c{% endif %}" href ="{% url 'main' %}"> Home</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="{% url 'main' %}#about"> About</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="{% url 'main' %}#service"> Service</a></li>
+						<li class="menu-list"> <a class="{% if request.resolver_match.url_name == 'catalog' %}menu-link-active-c{% else %}menu-link-c{% endif %}" href ="{% url 'catalog' %}"> Gallery</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="{% url 'main' %}#news"> News</a></li>
+						<li class="menu-list"> <a class="menu-link-c" href ="{% url 'main' %}#team"> Team</a></li>
+						<li class="menu-list"> <a class="{% if request.resolver_match.url_name == 'contacts' %}menu-link-active-c{% else %}menu-link-c{% endif %}" href ="{% url 'contacts' %}"> Contact Us</a></li>
+					</ul>
+</div>
