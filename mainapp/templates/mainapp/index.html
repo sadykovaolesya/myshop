@@ -142,29 +142,14 @@
 
 				 	<div class="gallery-title"><h3>Our Gallery</h3></div>
 					<div class="gallery-items">
+					{% for product in products %}
 						<div class ="div-gallery">
-							<img class = "img_gallery" src="{% static 'img/assassin.jpg' %}" alt="img">
-							<form action="#" class="form-buy"> 
-						<div class="discribe">ASSASIN’S CREED: Rogue</div> 
+							<img class = "img_gallery" src="{% static 'img/' %}{{product.image_src}}" alt="{{product.alt}}">
+							<form action="{{ product.image_href}}" class="form-buy"> 
+						<div class="discribe">{{product.name}}</div> 
 						<button class ="buy-button" type="button">Buy </button> </form>
 						</div>
-
-						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/tomb.png' %}" alt="img">
-						<form action="#" class="form-buy"> 
-						<div class="discribe">TOMB RAIDER</div> 
-						<button class ="buy-button" type="button">Buy </button> </form>
-						</div>
-						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/ryse.png' %}" alt="img">
-						<form action="#" class="form-buy"> 
-						<div class="discribe">RYSE: Son Of Rome</div>  
-						<button class ="buy-button" type="button">Buy </button> </form>
-						</div>
-						<div class ="div-gallery"><img class = "img_gallery" src="{% static 'img/warcraft.png' %}" alt="img">
-						<form action="#" class="form-buy"> 
-						<div class="discribe2">WORLD OF WARCRAFT:<br> Wrath Of The Linch King</div>  
-						<button class ="buy-button" type="button">Buy </button> </form>
-
-						</div>
+					{% endfor %}
 					</div>
 			  </div>
 			</div>
@@ -294,8 +279,6 @@
 
 
 
-
-
 				<a name ="team"></a>
 			  <div class ="team-conteiner"> 
 			  	<div class="team-title">
@@ -303,16 +286,16 @@
 			  	</div>
 			  
 				<div class="team-items">
-
+					{% for member in team  %}
 					<div class ="team">
-						<img class = "img_team" src="{% static 'img/t1.jpg' %}" alt="img">
+						<img class = "img_team" src="{% static 'img/' %}{{member.image_src}}" alt="img">
 
 					<div class="name">
-						<h4>Mary Jane</h4>
+						<h4>{{member.name}}</h4>
 					</div>
 
 					<div class="position">
-						Vestibulum
+						{{member.position}}
 					</div>
 					<div class="soc">
 						<div class="fb"></div>
@@ -322,55 +305,7 @@
 					</div>
 					</div>
 					
-
-					<div class ="team">
-						<img class = "img_team" src="{% static 'img/t2.jpg' %}" alt="img">
-											<div class="name">
-						<h4>Peter Parker</h4>
-					</div>
-
-					<div class="position">
-						Ves tibulum
-					</div>
-					<div class="soc">
-						<div class="fb"></div>
-						<div class="tw"></div>
-						<div class="rss-black"></div>
-						<div class="vk-black"></div>
-					</div>
-					</div>
-					<div class ="team">
-						<img class = "img_team" src="{% static 'img/t3.jpg' %}" alt="img">
-											<div class="name">
-						<h4>John Watson</h4>
-					</div>
-
-					<div class="position">
-						Vestibulum
-					</div>
-					<div class="soc">
-						<div class="fb"></div>
-						<div class="tw"></div>
-						<div class="rss-black"></div>
-						<div class="vk-black"></div>
-					</div>
-					</div>
-					<div class ="team">
-						<img class = "img_team" src="{% static 'img/t4.jpg' %}" alt="img">
-											<div class="name">
-						<h4>Steven Wilson</h4>
-					</div>
-
-					<div class="position">
-						Vestibulum
-					</div>
-					<div class="soc">
-						<div class="fb"></div>
-						<div class="tw"></div>
-						<div class="rss-black"></div>
-						<div class="vk-black"></div>
-					</div>
-					</div>
+				{% endfor %}
 				</div>
 			  </div>
 
